@@ -2,9 +2,9 @@ import React, {Component} from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-const Counter = ({onClick}) => {
+const Counter = ({dispatch}) => {
     return (
-            <button onClick={onClick}> Vote! </button>
+            <button onClick={() => dispatch({type: 'clicked'})}> Vote! </button>
         );
 }
 
