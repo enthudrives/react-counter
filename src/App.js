@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Counter from './Counter'
-import {connect} from 'redux';
 
 class App extends Component {
 
