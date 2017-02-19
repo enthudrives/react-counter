@@ -23,7 +23,7 @@ render() {
               <h2>Number of votes: {this.state.count}</h2>
           </div>
                 <img src={logo} style={{width: '60%'}} />
-                <p> This is the picture of my dog. Please like and share!</p>
+                <p> This is my logo. Please upvote!</p>
                 <Counter value={this.state.count} onClick={this.onClick.bind(this)}/>
          </div>
         );
