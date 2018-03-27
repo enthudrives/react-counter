@@ -1,11 +1,14 @@
-import React, {Component} from 'react';
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import actions from "./actions";
+import {connect} from "unistore/react";
 
-const Counter = ({onClick}) => {
+const CounterComponent = ({increment}) => {
     return (
-            <button onClick={onClick}> Vote! </button>
-        );
-}
+        <button onClick={increment}> Vote! </button>
+    );
+};
+
+const Counter = connect([], actions)(CounterComponent);
 
 export default Counter;
